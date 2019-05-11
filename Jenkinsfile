@@ -1,6 +1,7 @@
 pipeline {
     agent { docker { 
         image 'anthonymonori/android-ci-image'
+        //arugment to execute everything as a sudoer
         args '-u root:sudo'
         }
     }
